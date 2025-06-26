@@ -1,24 +1,41 @@
-const mongoose = require("mongoose");
-const EventSchema = new mongoose.Schema(
-  {
-    title: {
-      type: String,
-    },
-    description: {
-      type: String,
-    },
-    date: {
-      type: Date,
-    },
-    location: {
-      type: String,
-    },
-    imageUrl: {
-      type: String,
-    },
+import mongoose from 'mongoose';
+
+const eventSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
   },
-  {
-    timestamps: true,
-  }
-);
-module.exports = mongoose.model("Event", EventSchema);
+  college: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
+    required: true,
+  },
+  time: {
+    type: String,
+    required: true,
+  },
+  type: {
+    type: String,
+    enum: ['Workshop', 'Festival', 'Competition', 'Conference', 'exhibition', 'Others'], // you can extend this
+    required: true,
+  },
+  category: {
+    type: String,
+    required: true,
+  },
+  location: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+  },
+  image: {
+    type: String,
+  },
+}, { timestamps: true });
+
+export default mongoose.models.Event || mongoose.model('Event', eventSchema);
