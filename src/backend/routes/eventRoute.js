@@ -11,5 +11,5 @@ router.get("/", getAllEvents);
 router.get("/:id", getEventById);
 router.put("/:id", updateEvent);
 router.put("/:id", deleteEvent);
-router.module.exports = router;
+module.exports = router;
 // Middleware to validate event data
