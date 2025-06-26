@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 // export const metadata = {
 //   title: "About Univent - The Unified College Events Platform",
 //   description: "Learn about Univent's mission to connect students with campus events across universities",
@@ -82,30 +82,28 @@ export default function About() {
               The Team Behind Univent
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  name: "Shubham Joshi",
-                  role: "Co-Founder",
-                  bio: "Computer Science graduate who saw the need for centralized event management",
-                },
-                {
-                  name: "Divyanshu Naugai",
-                  role: "Co-Founder",
-                  bio: "Communication and Signal Processing specialist fond of event organization",
-                },
-              ].map((member, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl shadow-md p-6 text-center"
-                >
-                  <div className="h-24 w-24 mx-auto rounded-full bg-gray-200 mb-4"></div>
-                  <h3 className="text-xl font-bold text-blue-800">
-                    {member.name}
-                  </h3>
-                  <p className="text-orange-500 mb-3">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
-                </div>
-              ))}
+              <div className="bg-white rounded-xl shadow-md p-6 text-center">
+                <Image alt="Shubham Joshi" src='/assets/images/sj.jpg' height={100} width={100} className="mx-auto rounded-full mb-2"></Image>
+                <h3 className="text-xl font-bold text-blue-800">
+                  Shubham Joshi
+                </h3>
+                <p className="text-orange-500 mb-3">Co-Founder</p>
+                <p className="text-gray-600">
+                  Computer Science graduate who saw the need for centralized
+                  event management
+                </p>
+              </div>
+              <div className="bg-white rounded-xl shadow-md p-6 text-center">
+               <Image alt="Divyanshu Naugai" src='/assets/images/dn.jpg' height={100} width={100} className="mx-auto rounded-full mb-2"></Image>
+                <h3 className="text-xl font-bold text-blue-800">
+                  Divyanshu Naugai
+                </h3>
+                <p className="text-orange-500 mb-3">Co-Founder</p>
+                <p className="text-gray-600">
+                  Communication and Signal Processing specialist fond of event
+                  organization
+                </p>
+              </div>
             </div>
           </div>
         </section>
