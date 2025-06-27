@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white pt-12 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* About Section */}
+         
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">
               <span className="text-blue-400">Univent</span>
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+         
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3 text-gray-400">
@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter */}
+         
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Stay Updated</h4>
             <p className="text-gray-400">
@@ -102,10 +102,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
+       
         <div className="border-t border-gray-800 my-8"></div>
 
-        {/* Bottom Footer */}
+        
         <div className="flex flex-col md:flex-row justify-between items-center text-sm">
           <p className="text-gray-500">
             &copy; {currentYear} Univent. All rights reserved.

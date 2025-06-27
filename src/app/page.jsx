@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 
@@ -41,12 +42,12 @@ export default function Home() {
           </p>
           
           <div className="flex justify-center gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition">
+            <Link href='/events' className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition">
               Explore Events
-            </button>
-            <button className="border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full font-medium transition">
+            </Link>
+            <Link href='/auth/register' className="border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full font-medium transition">
               Register College
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -80,9 +81,9 @@ export default function Home() {
           <p className="max-w-xl mx-auto text-gray-600 mb-8">
             Join thousands of students discovering and participating in events across universities.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition">
+          <Link href='/auth/register' className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition">
             Sign Up Now - It's Free!
-          </button>
+          </Link>
         </section>
       </main>
     </>

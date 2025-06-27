@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-// export const metadata = {
-//   title: "About Univent - The Unified College Events Platform",
-//   description: "Learn about Univent's mission to connect students with campus events across universities",
-// };
+export const metadata = {
+  title: "About Univent - The Unified College Events Platform",
+  description: "Learn about Univent's mission to connect students with campus events across universities",
+};
 
 export default function About() {
   return (

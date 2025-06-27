@@ -19,7 +19,7 @@ const eventSchema = new mongoose.Schema({
   },
   type: {
     type: String,
-    enum: ['Workshop', 'Festival', 'Competition', 'Conference', 'exhibition', 'Others'], // you can extend this
+    enum: ['Workshop', 'Festival', 'Competition', 'Conference', 'Exhibition', 'Others'], // you can extend this
     required: true,
   },
   category: {
@@ -32,9 +32,15 @@ const eventSchema = new mongoose.Schema({
   },
   description: {
     type: String,
+    required: true,
+  },
+  details: {
+    type: String,
+    required: true,
   },
   image: {
     type: String,
+    required: true,
   },
 }, { timestamps: true });
 
